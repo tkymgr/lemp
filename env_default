@@ -1,0 +1,9 @@
+APP_PATH=./app
+
+# MySQL
+MYSQL_DATABASE=hoge
+MYSQL_USER=hoge
+MYSQL_PASSWORD=hoge
+
+# Timezone
+TIMEZONE=Asia/Tokyo
