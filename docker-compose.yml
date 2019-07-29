@@ -55,6 +55,14 @@ services:
     networks:
       - default
 
+  mail:
+    container_name: mail
+    image: mailhog/mailhog
+    ports:
+      - 8025:8025
+    networks:
+      - default
+
 networks:
   default:
     driver: bridge
