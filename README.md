@@ -1,31 +1,29 @@
-# LEMPスケルトン
+# LEMP skeleton
 
-## 起動手順
-
-### 作業フォルダを作成する
+### Create work folders
 ```
 $ mkdir lemp
 $ cd lemp
 ```
 
-### Githubから展開
+### Deploy from Github
 ``` 
 $ git clone git@github.com:tkymgr/lemp.git .
 ```
 
-### docker用の環境ファイルを作成
+### Create environment file for docker
 ```
 cp env_default .env
 ```
-コピー後に適宜変更する感じ
+Feeling to change appropriately after copying.
 
-### ワークフォルダーを作成する
+### Create folders for the environment
 ```
 $ mkdir .data logs app
 ```
-環境ファイルに従ってフォルダーも変える感じ
+Feel like changing folders according to environment file.
 
-### dockerイメージの作成
+### Create docker images
 ```
 $ docker-compose build
 ```
