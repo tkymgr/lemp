@@ -71,6 +71,13 @@ services:
     networks:
       - default
 
+  js:
+    container_name: js
+    image: node:alpine
+    volumes:
+      - ${APP_PATH}:/work
+    working_dir: /work
+
 networks:
   default:
     driver: bridge
